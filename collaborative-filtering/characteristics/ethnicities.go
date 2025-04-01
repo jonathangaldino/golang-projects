@@ -19,7 +19,7 @@ var EthnicitiesMap = map[string]int{
 var EthnicitiesMaxFill = 2
 
 func MakeEthnicitiesVector(userEthnicities []string) []int {
-	ethVector := make([]int, len(SongGenreMap))
+	ethVector := make([]int, len(EthnicitiesMap))
 
 	for _, eth := range userEthnicities {
 		if index, exists := EthnicitiesMap[eth]; exists {
